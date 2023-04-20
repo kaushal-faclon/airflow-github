@@ -37,7 +37,7 @@ def process_commits(**kwargs):
 github_sensor = BaseGithubRepositorySensor(
     task_id='github_sensor',
     github_conn_id='github_connection',  # specify the GitHub connection configured in step 2
-    repo='kaushal-faclon/airflow-github',  # specify the repository in the format owner/repo
+    # repo='kaushal-faclon/airflow-github',  # specify the repository in the format owner/repo
     result_processor=process_commits,  # specify the callback function to process the commits
     mode='poke',  # use poke mode for periodic polling
     timeout=600,  # specify the timeout for polling in seconds
