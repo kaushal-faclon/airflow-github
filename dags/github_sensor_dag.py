@@ -13,7 +13,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 dag = DAG(
-    'github_commits_dag',
+    'github_commits_dag_new',
     default_args=default_args,
     schedule_interval=timedelta(minutes=30),  # polling interval for checking commits
 )
